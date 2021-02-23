@@ -1,0 +1,49 @@
+
+@keyframes slide-in-down {
+  from { opacity: 0; top: -20px; }
+  to { opacity: 1; top: 30px; }
+}
+
+#popup-after-reg {
+    display: none;
+    position: fixed;
+    border-color: rgba(255, 102, 51, 1);
+	border-style: solid;
+	border: 2 px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    width: 500px;
+    height: min-content;
+    color: rgba(88, 88, 88, 1);
+    font-size: 30px;
+    text-align: center;
+    z-index: 1000000;
+    animation: slide-in-down 0.3s ease-in-out;
+}
+
+#popup-after-reg__inner {
+    position: relative;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#popup-after-reg__text {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+#icon-close-popup {
+    font-size: 30px;
+    line-height: 15px;
+    text-align: right;
+    width: 100%;
+    cursor: pointer;
+}
